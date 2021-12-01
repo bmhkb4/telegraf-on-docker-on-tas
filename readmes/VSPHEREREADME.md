@@ -2,6 +2,8 @@ Refer to the [main readme](../README.md) if you are lost
 
 This module uses the [vsphere plugin](https://github.com/influxdata/telegraf/tree/master/plugins/inputs/vsphere) for telegraf
 
+**Special Note** This one is sort of a work-in-progress, you'll notice we don't actually use the environment variable in the .conf file for the only actually usable user-provided-service key:pair
+
 # VSPHERE Specific Prereqs
 ***
 ## 1. Create Read Only Admin Account in vCenter
