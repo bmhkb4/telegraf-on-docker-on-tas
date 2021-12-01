@@ -1,5 +1,7 @@
 Refer to the [main readme](./README.md) if you are lost
 
+This module uses the [vsphere plugin](https://github.com/influxdata/telegraf/tree/master/plugins/inputs/vsphere) for telegraf
+
 # VSPHERE Specific Prereqs
 ***
 ## 1. Create Read Only Admin Account in vCenter
