@@ -1,5 +1,7 @@
 Refer to the [main readme](./README.md) if you are lost
 
+This module uses the regular old [prometheus plugin](https://github.com/influxdata/telegraf/blob/master/plugins/inputs/prometheus/README.md) for telegraf
+
 # * Healthwatch Specific Prereqs*
 ## 1. Gather Cert and Key
 These are fine to be copy pasted directly into the config
