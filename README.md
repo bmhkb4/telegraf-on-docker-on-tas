@@ -32,7 +32,7 @@ You need a way to get creds into the container and parsed so the telegraf agent 
 ```
 '."some-environment-variable"[].credentials.credentials.CLOUDFOUNDRY_KEY_PEM_HEALTHWATCH_API.password'
 ```
-and you can see us parsing the credentials in an example [here](./bin/telegraf_healthwatch.sh#10).
+and you can see us parsing the credentials in an example [here](./bin/telegraf_healthwatch.sh#L10).
 
 
 # Build Docker Containers
