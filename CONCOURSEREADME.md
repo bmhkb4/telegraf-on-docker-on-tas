@@ -1,5 +1,7 @@
 Refer to the [main readme](./README.md) if you are lost
 
+This module uses the regular old [prometheus plugin](https://github.com/influxdata/telegraf/blob/master/plugins/inputs/prometheus/README.md) for telegraf
+
 # * Concourse Specific Prereqs*
 ## 1. Turn on Prometheus endpoint for Concourse
 Reference [this](https://concourse-ci.org/metrics.html) or if Concourse is deployed through bosh, use an [ops file](https://github.com/concourse/concourse-bosh-deployment/blob/master/cluster/operations/prometheus.yml)
