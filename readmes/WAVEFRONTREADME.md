@@ -1,4 +1,4 @@
-Refer to the [main readme](./README.md) if you are lost
+Refer to the [main readme](../README.md) if you are lost
 
 This module uses the [wavefront output plugin](https://github.com/influxdata/telegraf/tree/master/plugins/outputs/wavefront) for telegraf
 
