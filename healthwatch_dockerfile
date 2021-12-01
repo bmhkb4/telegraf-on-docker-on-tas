@@ -1,0 +1,11 @@
+FROM telegraf:1.18.2
+RUN apt-get update && apt-get install -y --no-install-recommends jq && \
+    rm -rf /var/lib/apt/lists/*
+ADD bin/telegraf.sh /bin/telegraf.sh
+ADD bin/telegraf_healthwatch.sh /bin/telegraf_healthwatch.sh
+ADD templates/default_telegraf.conf /etc/telegraf/telegraf.conf
+ADD templates/wavefrontproxy_out.conf /etc/telegraf/telegraf.d/wavefrontproxy_out.conf
+ADD templates/healthwatch_in.conf /etc/telegraf/telegraf.d/healthwatch_in.conf
+RUN chmod +x /bin/telegraf.sh
+RUN chmod +x /bin/telegraf_healthwatch.sh
+CMD ["telegraf_healthwatch.sh"]

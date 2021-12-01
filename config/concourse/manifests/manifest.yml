@@ -1,0 +1,13 @@
+---
+applications:
+- name: telegraf_agent_concourse-1
+  memory: 256M
+  disk_quota: 512M
+  health-check-type: process
+  docker:
+    image: <docker registry url>/telegraf:concourse_v0.1
+  services:
+    - log-drain
+    - telegraf-concourse-default
+    - telegraf-concourse-in
+    - telegraf-concourse-wavefront-out

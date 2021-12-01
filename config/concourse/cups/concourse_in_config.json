@@ -1,0 +1,1 @@
+{"concourse_url":"http://<static ip of concourse prometheus endpoint>:<prometheus endpoint port>/metrics"}

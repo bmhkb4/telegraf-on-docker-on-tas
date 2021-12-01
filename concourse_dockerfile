@@ -1,0 +1,11 @@
+FROM telegraf:1.18.2
+RUN apt-get update && apt-get install -y --no-install-recommends jq && \
+    rm -rf /var/lib/apt/lists/*
+ADD bin/telegraf.sh /bin/telegraf.sh
+ADD bin/telegraf_concourse.sh /bin/telegraf_concourse.sh
+ADD templates/default_telegraf.conf /etc/telegraf/telegraf.conf
+ADD templates/wavefrontproxy_out.conf /etc/telegraf/telegraf.d/wavefrontproxy_out.conf
+ADD templates/concourse_in.conf /etc/telegraf/telegraf.d/concourse_in.conf
+RUN chmod +x /bin/telegraf.sh
+RUN chmod +x /bin/telegraf_concourse.sh
+CMD ["telegraf_concourse.sh"]

@@ -1,0 +1,11 @@
+FROM telegraf:1.18.2
+RUN apt-get update && apt-get install -y --no-install-recommends jq && \
+    rm -rf /var/lib/apt/lists/*
+ADD bin/telegraf.sh /bin/telegraf.sh
+ADD bin/telegraf_vsphere.sh /bin/telegraf_vsphere.sh
+ADD templates/default_telegraf.conf /etc/telegraf/telegraf.conf
+ADD templates/wavefrontproxy_out.conf /etc/telegraf/telegraf.d/wavefrontproxy_out.conf
+ADD templates/vsphere_in.conf /etc/telegraf/telegraf.d/vsphere_in.conf
+RUN chmod +x /bin/telegraf.sh
+RUN chmod +x /bin/telegraf_vsphere.sh
+CMD ["telegraf_vsphere.sh"]

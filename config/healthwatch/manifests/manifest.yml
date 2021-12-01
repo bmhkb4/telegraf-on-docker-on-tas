@@ -1,0 +1,14 @@
+---
+applications:
+- name: telegraf_agent_healthwatch-1
+  memory: 1024M
+  disk_quota: 1024M
+  health-check-type: process
+  docker:
+    image: <docker registry url>/telegraf:healthwatch_v0.1
+  services:
+    - log-drain
+    - vault-credhub-secrets
+    - telegraf-healthwatch-default
+    - telegraf-healthwatch-in
+    - telegraf-healthwatch-wavefront-out
