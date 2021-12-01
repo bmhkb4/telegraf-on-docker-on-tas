@@ -8,5 +8,5 @@ This module uses the [wavefront output plugin](https://github.com/influxdata/tel
 
 ## 2. Inject the HOST:PORT in as Environment Variables (User-provided Service)
 
-See [here](./templates/wavefrontproxy_out.conf) and [this](./bin/telegraf_wavefront.sh) for an example of how we reference these
+See [here](./templates/wavefrontproxy_out.conf) and [this](../bin/telegraf_wavefront.sh) for an example of how we reference these
 
