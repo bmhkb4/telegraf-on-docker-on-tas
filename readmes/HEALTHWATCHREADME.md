@@ -24,5 +24,5 @@ awk 'NF {sub(/\r/, ""); printf "%s\\n",$0;}' /tmp/ca
 
 ## 5. Update configuration json
 
-Example [here](../config/healthwatch_in_config.json)
+Example [here](../config/healthwatch/cups/healthwatch_in_config.json)
 
