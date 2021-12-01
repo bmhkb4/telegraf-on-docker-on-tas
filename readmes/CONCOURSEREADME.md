@@ -1,4 +1,4 @@
-Refer to the [main readme](./README.md) if you are lost
+Refer to the [main readme](../README.md) if you are lost
 
 This module uses the regular old [prometheus plugin](https://github.com/influxdata/telegraf/blob/master/plugins/inputs/prometheus/README.md) for telegraf
 
