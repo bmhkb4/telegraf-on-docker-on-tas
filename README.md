@@ -18,7 +18,7 @@
         * [Vsphere](./VSPHEREREADME.md)
         * [Concourse](./CONCOURSEREADME.md)
     * and 1 pre-defined Output module
-        * [Wavefront](https://docs.wavefront.com/proxies.html)
+        * [Wavefront Proxy](https://github.com/influxdata/telegraf/tree/master/plugins/outputs/wavefront)
 
     **NOTE:** The current design is 1 INPUT and 1 OUTPUT module per container, and ALL containers use Wavefront OUT
 
