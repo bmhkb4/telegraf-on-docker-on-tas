@@ -10,6 +10,6 @@ Reference [this](https://concourse-ci.org/metrics.html) or if Concourse is deplo
 Populate [json](config/concourse/cups/concourse_in_config.json)
 
 Note: If you use cert/key for access you can steal some logic from other use cases
-* [Healthwatch](./HEALTHWATCHREADME.md)
-* [Vsphere](./VSPHEREREADME.md)
+* [Healthwatch](./readmes/HEALTHWATCHREADME.md)
+* [Vsphere](./readmes/VSPHEREREADME.md)
 

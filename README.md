@@ -14,11 +14,11 @@
 
 1. Understand the Modules
     * We have 3 pre-defined Input modules:
-        * [Healthwatch](./HEALTHWATCHREADME.md)
-        * [Vsphere](./VSPHEREREADME.md)
-        * [Concourse](./CONCOURSEREADME.md)
+        * [Healthwatch](./readmes/HEALTHWATCHREADME.md)
+        * [Vsphere](./readmes/VSPHEREREADME.md)
+        * [Concourse](./readmes/CONCOURSEREADME.md)
     * and 1 pre-defined Output module
-        * [Wavefront Proxy](https://github.com/influxdata/telegraf/tree/master/plugins/outputs/wavefront)
+        * [Wavefront Proxy](./readmes/WAVEFRONTREADME.md)
 
     **NOTE:** The current design is 1 INPUT and 1 OUTPUT module per container, and ALL containers use Wavefront OUT
 
