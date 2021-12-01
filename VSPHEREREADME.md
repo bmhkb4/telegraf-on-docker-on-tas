@@ -8,7 +8,7 @@ This module uses the [vsphere plugin](https://github.com/influxdata/telegraf/tre
 
 Via active directory or local account
 
-**Note:** Make sure it has access to [all these config options in vCenter](./templates/vsphere_in.conf#L5-88)
+**Note:** Make sure it has access to [all these config options in vCenter](./templates/vsphere_in.conf#L5-L88)
 
 ## 2. Inject the RO Account/Password in via whatever Cred Mgmt stuff you have
 
